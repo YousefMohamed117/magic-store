@@ -1,0 +1,1 @@
+import{p as s}from"./cartStore.72ada58f.js";import{f as t}from"./entry.aebadb58.js";const m=()=>{const o=t(null),e=t(null),r=t(null);return{error:o,filePath:e,url:r,uploadImage:async a=>{e.value=`pics/${a}`;const l=s.ref(e.value);try{r.value=await l.getDownloadURL()}catch(n){o.value=n}},deleteImage:async a=>{await s.ref(a).delete()}}};export{m as u};
